@@ -1,0 +1,81 @@
+/* Geral */
+* {
+  font-family: 'Heebo', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  color: #21243D;
+}
+/* Navecação */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 15px;
+}
+
+nav h1 {
+  font-size: 30px;
+}
+
+ul#links a {
+  font-size: 18px;
+  color: #21243D;
+  text-decoration: none;
+}
+
+#links a:hover {
+  color: #FF6464;
+  transition: 100ms;
+  border-bottom: 1.5px solid #FF6464;
+}
+/* Fim navegação */
+#session-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+#session-1 #resume {
+  display: flex;
+  flex-direction: column;
+}
+
+#resume h1 {
+  font-size: 44px;
+  margin-bottom: 15px;
+  color: #21243D;
+}
+
+#resume button {
+  width: 208px;
+  height: 47px;
+  border-radius: 2px;
+  background: #FF6464;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+#foto {
+  width: 243px;
+  height: 243px;
+}
+
+#foto img {
+  border-radius: 150px;
+  width: 243px;
+  height: 243px;
+}
