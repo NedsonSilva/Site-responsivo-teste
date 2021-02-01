@@ -5,15 +5,20 @@
   box-sizing: border-box;
   color: #21243D;
 }
-/* Navecação */
+/* ||||| Navecação |||||| */
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background: white;
-  align-items: center;
   position: sticky;
   top: 0;
   border-bottom: 2px solid #fbfbfb;
+}
+nav div {
+  display: flex;
+  justify-content: space-between;
+  width: 82%;
+  align-items: center;
 }
 nav ul {
   display: flex;
@@ -22,13 +27,11 @@ nav ul {
   align-items: center;
 }
 
-nav ul li {
-  padding: 15px;
-}
+nav ul li { padding: 15px; }
 
-nav h1 {
-  font-size: 30px;
-}
+nav ul li:last-of-type { padding-right: 0px;}
+
+nav h1 { font-size: 30px; }
 
 ul#links a {
   font-size: 18px;
@@ -41,10 +44,12 @@ ul#links a {
   transition: 100ms;
   border-bottom: 1.5px solid #FF6464;
 }
-/* |||||||||| Fim navegação |||||||||||||*/
+/* |||||||||| SESSAO 1 |||||||||||||*/
 #session-1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 82%;
+  margin: 0 auto;
   align-items: center;
   height: 500px;
   padding-top: 100px;
@@ -142,9 +147,9 @@ ul#links a {
 }
 
 .align-works {
-  border: 1px solid black;
   display: flex;
   margin: 10px;
+  column-gap: 20px;
 }
 
 .align-works h3 {
@@ -158,4 +163,10 @@ ul#links a {
   padding-left: 10px;
   padding-right: 10px;
   font-weight: 600;
+}
+
+#works1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
