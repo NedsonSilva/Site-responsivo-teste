@@ -14,12 +14,14 @@ nav {
   top: 0;
   border-bottom: 2px solid #fbfbfb;
 }
+
 nav div {
   display: flex;
   justify-content: space-between;
   width: 82%;
   align-items: center;
 }
+
 nav ul {
   display: flex;
   list-style: none;
@@ -29,7 +31,7 @@ nav ul {
 
 nav ul li { padding: 15px; }
 
-nav ul li:last-of-type { padding-right: 0px;}
+nav ul li:last-of-type { padding-right: 0px; }
 
 nav h1 { font-size: 30px; }
 
@@ -44,6 +46,7 @@ ul#links a {
   transition: 100ms;
   border-bottom: 1.5px solid #FF6464;
 }
+
 /* |||||||||| SESSAO 1 |||||||||||||*/
 #session-1 {
   display: flex;
@@ -55,10 +58,7 @@ ul#links a {
   padding-bottom: 70px;
 }
 
-#session-1 #resume {
-  display: flex;
-  flex-direction: column;
-}
+#session-1 #resume { display: flex; flex-direction: column; }
 
 #resume h1 {
   font-size: 44px;
@@ -67,6 +67,7 @@ ul#links a {
 }
 
 #resume p { width: 80%; }
+
 /* Botao de download */
 #resume button {
   width: 208px;
@@ -79,18 +80,11 @@ ul#links a {
   margin-top: 50px;
   box-shadow: 0px 0px 10px #b4b4b4;
 }
-#resume button:hover { cursor: pointer; }
-#foto {
-  width: 243px;
-  height: 243px;
-  overflow: hidden;
-}
 
-#foto img {
-  border-radius: 150px;
-  width: 243px;
-  height: 243px;
-}
+#resume button:hover { cursor: pointer; }
+
+#foto img { border-radius: 150px; width: 243px; height: 243px; }
+
 /* |||||| Pecent Posts ||||||| */
 #recent-posts {
   display: flex;
@@ -135,6 +129,7 @@ ul#links a {
 }
 
 .postagens p:last-of-type { font-weight: 300; }
+
 /* |||||| Trabalhos Feitos ||||||| */
 #featured-works {
   display: flex;
@@ -177,7 +172,6 @@ ul#links a {
   justify-content: space-evenly;
 }
 
-/* .align-works div h3 { } */
 .align-works img { border-radius: 4px; }
 
 /* |||||| FOOTER |||||| */
@@ -191,18 +185,21 @@ footer {
   align-items: center;
   padding-top: 100px;
 }
+
 footer div {
   display: flex;
   width: 260px;
   margin: 20px;
   justify-content: space-between;
 }
+
 footer div img {
   border-radius: 5px;
   width: 30px;
   overflow: hidden; 
 }
-/* ||||| Iniciando Responsividade */
+
+/* ||||| Iniciando Responsividade ||||| */
 @media (max-width: 700px) {
   #links {
     content: url(icons/menu-icon.png);
@@ -214,9 +211,7 @@ footer div img {
     align-items: center;
   }
   
-  .postagens {
-    width: 100%;
-  }
+  .postagens { width: 100%; }
 
   .align-works {
     flex-wrap: wrap;
@@ -224,12 +219,10 @@ footer div img {
     align-items: center;
     border-bottom: 2px solid #E0E0E0;
   }
-  #featured-works {
-    text-align: center;
-  }
-  .align-works div {
-    text-align: justify;
-  }
+
+  #featured-works { text-align: center; }
+
+  .align-works div { text-align: justify; }
 }
 
 @media (max-width: 1000px) {
@@ -239,10 +232,12 @@ footer div img {
     justify-content: center;
     align-items: center;
   }
+
   #resume {
     align-items: center;
     justify-content: center;
   }
+  
   #resume p {text-align: center;}
 
   #resume h1 { font-size: 32px; text-align: center;}
