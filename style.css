@@ -132,3 +132,30 @@ ul#links a {
   font-weight: 300;
 }
 /* |||||| Trabalhos Feitos ||||||| */
+#featured-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 1000px;
+  width: 82%;
+  margin: 0 auto;
+}
+
+.align-works {
+  border: 1px solid black;
+  display: flex;
+  margin: 10px;
+}
+
+.align-works h3 {
+  font-size: 30px;
+}
+
+.align-works span:first-of-type {
+  background: #142850;
+  color: white;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 600;
+}
