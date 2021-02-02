@@ -18,7 +18,7 @@ aside {
   display: flex;
 }
 
-aside div img { display: none; }
+aside label img {display: none;}
 
 nav div {
   display: flex;
@@ -33,11 +33,10 @@ nav div {
   margin: 0;
   align-items: center;
   padding-left: 0px;
+  overflow: hidden;
 }
 
 #links li { padding: 15px; }
-
-#links li:first-of-type { display: none; }
 
 #links li:last-of-type { padding-right: 0px; }
 
@@ -209,28 +208,38 @@ footer div img {
   overflow: hidden; 
 }
 
-/* ||||| Iniciando Responsividade ||||| */
-@media (max-width: 700px) {
+/* ||||| Layout Responsivo||||| */
+@media screen and (max-width: 700px) {
 
   nav div, #session-1, #posts, #titles, #featured-works, footer { width: 90%;}
+  /*||||| Menu Responsivo ||||||| */
   #links {
-    position: fixed;
-    right: 4.8%;
-    top: 8%;
     display: none;
+    position: fixed;
+    /* right: 4.8%; */
+    right: 0;
+    top: 7%;
     flex-direction: column;
-  }
-  #links li {
-    padding: 0px;
-  }
-  aside div img, aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* width: 260px; */
+    width: 100%;
+    background: #21243D;
+    border-radius: 2px;
   }
 
+  aside label img {display: block;}
+
+  #links li a { color: white;}
+
+  #links li { 
+    padding: 10px; 
+    border-bottom: 1px solid #E0E0E0;
+    width: 98%;
+    text-align: center;
+  }
+
+  #links li:last-of-type {border: none;}
+
   input:checked + #links{
-    background: chartreuse;
     display: flex;
   }
   
@@ -243,6 +252,8 @@ footer div img {
   
   .postagens { width: 100%; }
 
+  .align-works h3, .postagens h3 { font-size: 26px; }
+
   .align-works {
     flex-wrap: wrap;
     justify-content: center;
@@ -253,8 +264,10 @@ footer div img {
   #featured-works { text-align: center; }
 
   .align-works div { text-align: justify; }
-}
 
+  #titles { font-size: 18px; }
+}
+  
 @media (max-width: 1000px) {
   #session-1 {
     flex-direction: column-reverse;

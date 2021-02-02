@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;500;600&display=swap" rel="stylesheet">
   <script src="jquery-3.5.1.min.js"></script>
-  <script src="script.js"></script>
 </head>
 <body>
   
@@ -17,14 +16,11 @@
       <h1>Creative Working</h1>
       <aside>
         <label for="item1">
-          <img src="icons/menu-icon.png" alt="">
+          <img id="ftmenu" src="icons/menu-icon.png" alt="Menu">
         </label>
         <input type="checkbox" id="item1">
         
         <ul id="links">
-          <li>
-            <img src="icons/menu-icon.png" alt="Menu">
-          </li>
           <li>
             <a href="#works">Works</a>
           </li>
@@ -49,6 +45,7 @@
       </p>
       <button>Download Resume</button>
     </div>
+
     <figure id="foto">
       <img src="images/cat.jpg" alt="Foto do desenvolvedor">
     </figure>
@@ -58,6 +55,7 @@
     <div id="titles">
       <span>Recent posts</span> <span>View all</span>
     </div>
+
     <div id="posts">
       <div class="postagens" id="posts1">
         <h3>Making a design system from scratch</h3>
@@ -67,6 +65,7 @@
           Exercitation veniam consequat sunt nostrud amet.
         </p>
       </div>
+
       <div class="postagens" id="posts2">
         <h3>Creating pixel perfect icons in Figma</h3>
         <p>12 Feb 2020  |  Figma, Icon Design</p>
@@ -98,6 +97,7 @@
         </p>
       </div>
     </div>
+
     <div class="align-works" id="works2">
       <figure>
         <img src="images/vibrant-portraits.png" alt="vibrant-portraits">
@@ -136,7 +136,7 @@
 
   <footer>
     <div id="icons">
-      <a href="#facebook">
+      <a href="https://www.facebook.com/nedson.silva.568" target="_blank">
         <img src="icons/facebook-icon.png" alt="facebook">
       </a>
 
@@ -152,7 +152,9 @@
         <img src="icons/twitter-icon.png" alt="twitter">
       </a>
     </div>
+    
     <p>Copyright @2020 All rights reserved</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
