@@ -206,7 +206,9 @@ footer div img {
   overflow: hidden; 
 }
 
-/* ||||| Layout Responsivo||||| */
+
+/* |||||     Layout Responsivo      ||||| */
+
 @media screen and (max-width: 800px) {
 
   nav div, #session-1, #posts, #titles, #featured-works, footer { width: 90%;}
@@ -243,7 +245,6 @@ footer div img {
     right: 0;
     top: 7%;
     flex-direction: column;
-    /* width: 260px; */
     width: 100%;
     background: #21243D;
     border-radius: 2px;
@@ -266,7 +267,6 @@ footer div img {
     display: flex;
   }
   
-
   #posts {
     flex-direction: column;
     justify-content: center;
