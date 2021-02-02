@@ -51,3 +51,67 @@ ul#links a {
 }
 
 input { display: none; }
+
+/* ||||||    Conteudo Principal  ||||||||| */
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 90%;
+  margin: 0 auto;
+
+}
+
+section h1 {
+  font-size: 44px;
+  margin-top: 15%;
+}
+
+.container h2 {
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #e0e0e0;
+  margin-top: 10px; 
+  width: 100%;
+  padding: 10px;
+}
+
+.container div {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.container div span {
+  color: #8695A4;
+  margin-left: 10px;
+}
+
+/* |||||| FOOTER |||||| */
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 82%;
+  height: 300px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+footer div {
+  display: flex;
+  width: 260px;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+footer div img {
+  border-radius: 5px;
+  width: 30px;
+  overflow: hidden; 
+}
