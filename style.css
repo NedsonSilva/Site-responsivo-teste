@@ -7,15 +7,19 @@
 
 /* ||||| Navecação |||||| */
 nav {
-  position: sticky;
-  top: 0%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 10%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background: white;
   border-bottom: 2px solid #fbfbfb;
+  z-index: 100;
 }
 
-#ftmenu { display: none; }
+#ftmenu { display: none; width: 30px; }
 
 nav div {
   display: flex;
@@ -237,20 +241,20 @@ footer div img {
     margin-top: 10px;
     margin-bottom: 15px;
   }
+  
   /*||||| Menu Responsivo ||||||| */
   #links {
     display: none;
     position: fixed;
-    /* right: 4.8%; */
     right: 0;
-    top: 7%;
+    top: 10%;
     flex-direction: column;
     width: 100%;
     background: #21243D;
     border-radius: 2px;
   }
 
-  #ftmenu {display: block;}
+  #ftmenu { display: flex; }
 
   #links li a { color: white;}
 
