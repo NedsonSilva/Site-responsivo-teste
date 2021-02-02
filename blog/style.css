@@ -18,7 +18,7 @@ nav {
   z-index: 100;
 }
 
-#ftmenu { display: none; width: 30px; }
+#ftmenu { display: none; width: 30px; cursor: pointer; }
 
 nav div {
   display: flex;

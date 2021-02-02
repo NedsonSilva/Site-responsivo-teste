@@ -19,7 +19,7 @@ nav {
   z-index: 100;
 }
 
-#ftmenu { display: none; width: 30px; }
+#ftmenu { display: none; width: 30px; cursor: pointer;}
 
 nav div {
   display: flex;
@@ -270,7 +270,7 @@ footer div img {
   input:checked + #links{
     display: flex;
   }
-  
+  /* |||||   Postagens   |||||||| */
   #posts {
     flex-direction: column;
     justify-content: center;

@@ -154,7 +154,7 @@ footer div img {
     border-radius: 2px;
   }
 
-  #ftmenu { display: block;  }
+  #ftmenu { display: block; width: 30px; cursor: pointer; }
 
   #links li a { color: white;}
 
