@@ -3,8 +3,8 @@
   font-family: 'Heebo', sans-serif;
   margin: 0;
   box-sizing: border-box;
-  color: #21243D;
-}
+  color: #21243D; }
+
 /* ||||| Navecação |||||| */
 nav {
   position: sticky;
@@ -14,17 +14,14 @@ nav {
   background: white;
   border-bottom: 2px solid #fbfbfb;
 }
-aside {
-  display: flex;
-}
 
-aside label img {display: none;}
+#ftmenu { display: none; }
 
 nav div {
   display: flex;
   justify-content: space-between;
-  width: 82%;
   align-items: center;
+  width: 82%;
 }
 
 #links {
@@ -50,10 +47,11 @@ ul#links a {
 
 #links a:hover {
   color: #FF6464;
-  transition: 100ms;
   border-bottom: 1.5px solid #FF6464;
+  transition: 150ms;
 }
-input { display: none;}
+
+input { display: none; }
 
 /* |||||||||| SESSAO 1 |||||||||||||*/
 #session-1 {
@@ -66,7 +64,7 @@ input { display: none;}
   padding-bottom: 70px;
 }
 
-#session-1 #resume { display: flex; flex-direction: column; }
+#resume { display: flex; flex-direction: column; }
 
 #resume h1 {
   font-size: 44px;
@@ -93,14 +91,14 @@ input { display: none;}
 
 #foto img { border-radius: 150px; width: 243px; height: 243px; }
 
-/* |||||| Pecent Posts ||||||| */
+/* |||||| RECENT POSTS ||||||| */
 #recent-posts {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 100%;
   background-color: #EDF7FA;
 }
+
 #titles {
   display: flex;
   justify-content: space-between;
@@ -148,7 +146,7 @@ input { display: none;}
   margin: 0 auto;
 }
 
-#featured-works h2 { font-weight: 400; margin-top: 20px;}
+#featured-works h2 { font-weight: 400; margin-top: 20px; }
 
 .align-works {
   display: flex;
@@ -209,9 +207,34 @@ footer div img {
 }
 
 /* ||||| Layout Responsivo||||| */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
 
   nav div, #session-1, #posts, #titles, #featured-works, footer { width: 90%;}
+  
+  #session-1 {
+    flex-direction: column-reverse;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #resume {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #resume p {text-align: center;}
+
+  #resume h1 { font-size: 32px; text-align: center;}
+  
+  #resume button { margin-bottom: 50px;}
+
+  #foto img { margin-top: 15%; margin-bottom: 15%; }
+
+  .align-works span {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
   /*||||| Menu Responsivo ||||||| */
   #links {
     display: none;
@@ -226,7 +249,7 @@ footer div img {
     border-radius: 2px;
   }
 
-  aside label img {display: block;}
+  #ftmenu {display: block;}
 
   #links li a { color: white;}
 
@@ -266,29 +289,4 @@ footer div img {
   .align-works div { text-align: justify; }
 
   #titles { font-size: 18px; }
-}
-  
-@media (max-width: 1000px) {
-  #session-1 {
-    flex-direction: column-reverse;
-    padding: 0px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #resume {
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #resume p {text-align: center;}
-
-  #resume h1 { font-size: 32px; text-align: center;}
-  
-  #resume button { margin-bottom: 50px;}
-
-  .align-works span {
-    margin-top: 10px;
-    margin-bottom: 15px;
-  }
 }
