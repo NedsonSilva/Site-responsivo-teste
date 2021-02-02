@@ -52,45 +52,57 @@ ul#links a {
 
 input { display: none; }
 
-/* ||||||    Conteudo Principal  ||||||||| */
+/* |||||  Conteudo Principal ||||||||  */
 
 section {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: 90%;
+  width: 65%;
   margin: 0 auto;
-
 }
-
 section h1 {
+  margin-top: 10%;
   font-size: 44px;
-  margin-top: 15%;
-  margin-bottom: 5%;
 }
-
-.container h2 {
-  font-size: 30px;
-}
-
-.container {
+#container {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #e0e0e0;
-  margin-top: 10px; 
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 20px;
+}
+.works {
+  display: flex;
+  column-gap: 20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  border-bottom: 1px solid black;
 }
 
-.container div {
-  margin-top: 8px;
-  margin-bottom: 8px;
+.works div {
+  display: flex;
+  flex-direction: column;
+}
+.works div h2 { font-size: 30px; }
+
+.datas {
+  margin-top: 10px;
+  margin-bottom: 12px;
 }
 
-.container div span {
-  color: #8695A4;
-  margin-left: 10px;
+.datas p { color: #8695A4 }
+
+.datas p span {
+  background: #142850;
+  color: white;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.images img {
+  width: 246px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 6px;
 }
 
 /* |||||| FOOTER |||||| */
@@ -118,30 +130,15 @@ footer div img {
   overflow: hidden; 
 }
 
-/* |||||| RESPONSIVIDADE |||||| */
-
-@media screen and (max-width: 800px) {
-  section {
-    width: 80%;
-  }
+@media screen and (max-width: 900px) {
+  section { width: 80%;}
+  
 }
 
 @media screen and (max-width: 700px) {
-  nav div { width: 90%; }
-
-  section { width: 90%; }
-
-  section h1 { font-size: 30px; }
-
-  .container h2 { font-size: 26px;}
-
-  .container {  text-align: justify;  }
-
-  .container div {
-    margin-bottom: 20px;
-  }
-
   /*||||| Menu Responsivo ||||||| */
+  nav div { width: 95%; }
+
   #links {
     display: none;
     position: fixed;
@@ -170,4 +167,19 @@ footer div img {
   input:checked + #links{
     display: flex;
   }
+  /* Fim menu */
+  section { width: 90%; }
+
+  section h1 { font-size: 30px; }
+
+  .works div h2 { font-size: 24px; }
+
+  .works {
+    flex-direction: column;
+    align-items: center;
+    column-gap: normal;
+  }
 }
+
+@media screen and (max-width: 400px){ .images, .images img { width: 100%; height: 100%;}}
+
