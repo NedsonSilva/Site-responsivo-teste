@@ -7,7 +7,7 @@
 
 /* ||||| Navecação |||||| */
 nav {
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   height: 10%;
@@ -134,17 +134,17 @@ footer div img {
   nav div { width: 90%; }
 
   #links {
-    display: none;
-    position: fixed;
+    /* display: none; */
+    position: absolute;
     right: 0;
-    top: 10%;
+    top: 100%;
     flex-direction: column;
     width: 100%;
     background: #21243D;
     border-radius: 2px;
   }
 
-  #ftmenu { display: block; width: 30px; cursor: pointer; }
+  #ftmenu { display: flex; }
 
   #links li a { color: white;}
 
@@ -156,10 +156,18 @@ footer div img {
   }
 
   #links li:last-of-type {border: none;}
+  
+  input:not(:checked) + #links {
+   transform: translateY(-50%) scaleY(0);
+   transition: 300ms;
+  }
 
   input:checked + #links{
-    display: flex;
+    transform: translateY(0) scaleY(1);
+    transition: 300ms;
+    z-index: 99;
   }
+
   /* Fim menu */
   section { width:  90%;}
 
