@@ -67,7 +67,7 @@ input { display: none; }
     right: 0;
     top: 100%;
     flex-direction: column;
-    width: 100%;
+    width: 70%;
     background: #21243D;
     border-bottom-left-radius: 5px;
     transform: translateY(-50%) scaleY(0);
