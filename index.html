@@ -8,20 +8,13 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;500;600&display=swap" rel="stylesheet">
-  <script src="jquery-3.5.1.min.js"></script>
 </head>
 <body>
   <nav>
     <div>
       <h1>Creative Working</h1>
-
-      <aside>
-        <label for="item1">
-          <img id="ftmenu" src="icons/menu-icon.png" alt="Menu">
-        </label>
-        <input type="checkbox" id="item1">
-        
-        <ul id="links">
+      <aside class="menu_closes">
+        <ul class="links">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -35,6 +28,9 @@
             <a href="works/work-detail.html">Contact</a>
           </li>
         </ul>
+        <div>
+          <img id="btn_menu" src="images/icons/menu-icon.png" alt="Menu">
+        </div>
       </aside>
     </div>
   </nav>
@@ -141,33 +137,24 @@
   <footer>
     <div id="icons">
       <a href="https://www.facebook.com/nedson.silva.568" target="_blank">
-        <img src="icons/facebook-icon.png" alt="facebook">
+        <img src="images/icons/facebook-icon.png" alt="facebook">
       </a>
 
       <a href="#instagram">
-        <img src="icons/instagram-icon.png" alt="Instagram">
+        <img src="images/icons/instagram-icon.png" alt="Instagram">
       </a>
 
       <a href="#linkedin">
-        <img src="icons/linkedin-icon.png" alt="Linkedin">
+        <img src="images/icons/linkedin-icon.png" alt="Linkedin">
       </a>
 
       <a href="#twitter">
-        <img src="icons/twitter-icon.png" alt="twitter">
+        <img src="images/icons/twitter-icon.png" alt="twitter">
       </a>
     </div>
     
     <p>Copyright @2020 All rights reserved</p>
   </footer>
-  <!-- <script>
-    var menu = document.getElementById('ftmenu');
-
-    function mudar() {
-      menu.setAttribute('src', 'icons/menu-animado.gif');
-    }
-    function normal() {
-      menu.setAttribute('src', 'icons/menu-icon.png');
-    }
-  </script> -->
+  <script src="script.js"></script>
 </body>
 </html>

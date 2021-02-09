@@ -12,7 +12,12 @@ nav {
   z-index: 100;
 }
 
-#ftmenu { display: none; width: 30px; cursor: pointer;}
+aside div img { 
+  max-width: 30px; 
+  max-height: 30px; 
+  cursor: pointer; 
+}
+aside div, aside div img { display: none; max-width: 30px; max-height: 30px;}
 
 nav div {
   display: flex;
@@ -21,7 +26,7 @@ nav div {
   width: 82%;
 }
 
-#links {
+.links {
   display: flex;
   list-style: none;
   margin: 0;
@@ -30,19 +35,19 @@ nav div {
   overflow: hidden;
 }
 
-#links li { padding: 15px; }
+.links li { padding: 15px; }
 
-#links li:last-of-type { padding-right: 0px; }
+.links li:last-of-type { padding-right: 0px; }
 
 nav h1 { font-size: 30px; }
 
-ul#links a {
+ul.links a {
   font-size: 18px;
   color: #21243D;
   text-decoration: none;
 }
 
-#links a:hover {
+.links a:hover {
   color: #FF6464;
   border-bottom: 1.5px solid #FF6464;
   transition: 150ms;
@@ -50,41 +55,45 @@ ul#links a {
 
 input { display: none; }
 
+
 @media screen and (max-width: 800px) {
-  
-    /*||||| Menu Responsivo ||||||| */
-    #links {
-      /* display: none; */
-      position: absolute;
-      right: 0;
-      top: 100%;
-      flex-direction: column;
-      width: 100%;
-      background: #21243D;
-      border-radius: 2px;
-    }
-  
-    #ftmenu { display: flex; }
-  
-    #links li a { color: white;}
-  
-    #links li { 
-      padding: 10px; 
-      border-bottom: 1px solid #E0E0E0;
-      width: 98%;
-      text-align: center;
-    }
-  
-    #links li:last-of-type {border: none;}
-    
-    input:not(:checked) + #links {
-     transform: translateY(-50%) scaleY(0);
-     transition: 300ms;
-    }
-  
-    input:checked + #links{
-      transform: translateY(0) scaleY(1);
-      transition: 300ms;
-      z-index: 99;
-    }
+
+  /*||||| Menu Responsivo ||||||| */
+  nav div, #session-1, #posts, #titles, #featured-works, footer { width: 90%;}
+  aside div, aside div img { display: block;}
+  .links {
+    /* display: none; */
+    position: absolute;
+    right: 0;
+    top: 100%;
+    flex-direction: column;
+    width: 100%;
+    background: #21243D;
+    border-bottom-left-radius: 5px;
+    transform: translateY(-50%) scaleY(0);
+    transition: 300ms ease-in;
+  }
+
+  .links li a { color: white;}
+
+  .links li { 
+    padding: 10px; 
+    border-bottom: 1px solid #E0E0E0;
+    width: 98%;
+    text-align: center;
+  }
+
+  .links li:last-of-type {border: none;}
+
+  .menu_close {
+    transform: translateY(0) scaleY(1);
+    transition: 300ms ease-in;
+  }
+
+   .menu_close ~ div img{
+    content: url(images/icons/menu-icon2.png);
+    transform: translateY(0) scaleY(1.4);
+    transition: 400ms;
+  }
+
 }
