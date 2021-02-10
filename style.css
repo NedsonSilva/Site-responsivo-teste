@@ -216,3 +216,7 @@ footer div img {
 
   #titles { font-size: 18px; }
 }
+
+@media screen and (max-width: 450px) {
+  .align-works figure img, .align-works figure { width: 100%; }
+}
