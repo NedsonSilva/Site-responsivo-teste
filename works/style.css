@@ -2,7 +2,8 @@
   font-family: 'Heebo', sans-serif;
   margin: 0;
   box-sizing: border-box;
-  color: #21243D; }
+  color: #21243D; 
+}
 
 /* |||||  Conteudo Principal ||||||||  */
 
@@ -10,15 +11,18 @@ section {
   width: 65%;
   margin: 0 auto;
 }
+
 section h1 {
   margin-top: 10%;
   font-size: 44px;
 }
+
 #container {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+
 .works {
   display: flex;
   column-gap: 20px;
@@ -31,6 +35,7 @@ section h1 {
   display: flex;
   flex-direction: column;
 }
+
 .works div h2 { font-size: 30px; }
 
 .datas {
@@ -58,6 +63,7 @@ section h1 {
 }
 
 /* |||||| FOOTER |||||| */
+
 footer {
   display: flex;
   flex-direction: column;
@@ -82,12 +88,16 @@ footer div img {
   overflow: hidden; 
 }
 
+/* |||||||||   Responsivo   ||||||||| */
+
 @media screen and (max-width: 900px) {
+
   section { width: 80%;}
   
 }
 
 @media screen and (max-width: 700px) {
+
   section { width: 90%; }
 
   section h1 { font-size: 30px; }
@@ -101,5 +111,11 @@ footer div img {
   }
 }
 
-@media screen and (max-width: 400px){ .images, .images img { width: 100%; height: 100%;}}
+@media screen and (max-width: 400px){ 
+  .images, 
+  .images img { 
+    width: 100%; 
+    height: 100%;
+  }
+}
 

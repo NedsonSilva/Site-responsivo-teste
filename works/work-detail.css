@@ -6,6 +6,7 @@
   color: #21243D; }
 
 /* ||||| Conteúdo Principal  ||||| */
+
 section {
   display: flex;
   flex-direction: column;
@@ -33,7 +34,6 @@ section figure img {
 
 section div p { font-weight: 300; }
 
-
 section div span {
   background: #FF6464;
   padding-left: 10px;
@@ -44,15 +44,12 @@ section div span {
   color: white;
 }
 
-section h2:first-of-type {
-  font-size: 30px;
-}
+section h2:first-of-type {  font-size: 30px; }
 
-section h2:last-of-type {
-  margin-bottom: 20px;
-}
+section h2:last-of-type { margin-bottom: 20px; }
 
 /* |||||| FOOTER |||||| */
+
 footer {
   display: flex;
   flex-direction: column;
@@ -87,6 +84,7 @@ footer div img {
 }
 
 @media screen and (max-width: 450px) {
+  
   section h1 { width: auto; }
 
   section figure img {

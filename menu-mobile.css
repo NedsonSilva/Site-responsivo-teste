@@ -17,7 +17,13 @@ aside div img {
   max-height: 30px; 
   cursor: pointer; 
 }
-aside div, aside div img { display: none; max-width: 30px; max-height: 30px;}
+
+aside div, 
+aside div img { 
+  display: none; 
+  max-width: 30px; 
+  max-height: 30px;
+}
 
 nav div {
   display: flex;
@@ -55,14 +61,23 @@ ul.links a {
 
 input { display: none; }
 
+/* |||||||  Responsivo  ||||||| */
 
 @media screen and (max-width: 800px) {
 
-  /*||||| Menu Responsivo ||||||| */
-  nav div, #session-1, #posts, #titles, #featured-works, footer { width: 90%;}
-  aside div, aside div img { display: block;}
+  nav div, 
+  #session-1, 
+  #posts, 
+  #titles, 
+  #featured-works, 
+  footer { 
+    width: 90%; 
+  }
+
+  aside div, 
+  aside div img { display: block; }
+
   .links {
-    /* display: none; */
     position: absolute;
     right: 0;
     top: 100%;
